@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>busfactor/web4.0</title>
-        <script src="http://localhost:9001/js/server.js"></script>
         <link rel="stylesheet" href="static/primer.css">
         <link rel="stylesheet" href="static/octicons.css">
         <link rel="stylesheet" href="static/dontworryaboutit.css">       
