@@ -43,17 +43,18 @@
                         <span class="octicon octicon-alert"></span>
                         Invalid repository!
                     </div>
-            <div style="margin-top: 1em;"></div>
+                    <div style="margin-top: 1em;"></div>
 <!-- {{/invalid}} -->
                     <form action="test" method="post">
                         <div>
                             <label>Enter a GitHub repo:</label>
                             <input class="input-block input-large" type="text" name="repo" placeholder="e.g. torvalds/linux">
                         </div>
-            <div style="margin-top: 1em;"></div>
+                        <div style="margin-top: 1em;"></div>
                         <div class="form-actions">
                                 <button type="submit" class="btn btn-primary">Calculate Busfactor<span class="octicon octicon-arrow-right"></span></button>
                         </div>
+                        <div style="margin-top: 1em;"></div>
                     </form>
                 </div>
         </main>
@@ -67,7 +68,7 @@
                 &emsp;<a href="dot">Base</a>
             </div>
             <div class="column one-third center">
-                <h1 style="color: #ccc; margin-top: -10px;"><i class="icon-mark-github"></i></h1>
+                <h1 style="color: #ccc; margin-top: -10px;"><i class="mega-octicon octicon-gist-secret"></i></h1>
             </div>
             <div class="column one-third right">
                 <!--<a href="#">Status</a>
@@ -81,35 +82,5 @@
                 &emsp;<a href="4.0">Us</a>
             </div>
         </footer>
- <script>
-/**
- * don't worry about it */
-document.body.onload = function(){
-    [].forEach.call(document.querySelectorAll('.bf-graph span'),function(el){
-        // i'm not worried about it
-        el.style.color = el.style.backgroundColor.replace("rgb","rgba").replace(")",",0.5)");
-
-        var target = document.getElementById(el.parentNode.dataset.repo);
-        el.addEventListener('click', function(evt) {
-            // it's fine
-            [].forEach.call(el.parentNode.querySelectorAll('.glow'),function(thisisreallyshitty){
-                thisisreallyshitty.classList.remove('glow');
-            });
-            el.classList.add('glow');
-            target.innerHTML = el.getAttribute('aria-label');
-            target.parentNode.style.backgroundColor = el.style.backgroundColor;
-            target.parentNode.classList.remove('gone');
-        },false);
-
-        // I SAID DON'T WORRY ABOUT IT
-        target.parentNode.querySelector('button').addEventListener('click', function(evt) {
-            el.classList.remove('glow');
-            target.innerHTML = '';
-            target.parentNode.classList.add('gone');
-        },false);
-    });
-}
-// D:
-        </script>
     </body>
 </html>

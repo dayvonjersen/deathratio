@@ -1,5 +1,7 @@
 .container {
     width: 100% !important;
+    display: flex;
+    flex-direction: column;
 }
 .columns {
     margin: 0 !important;
@@ -68,11 +70,12 @@ body, main .column {
 
 main {
     padding: 0 55px;
+    flex-grow: 1;
 }
 
 footer {
     border-top: 1px #e5e5e5 solid;
-    padding: 40px 15px 0px;
+    padding: 40px 15px 10px;
     color: #767676;
     font-size: 12px;
 }
